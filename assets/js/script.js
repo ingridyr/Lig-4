@@ -1,12 +1,12 @@
 const mainContainer = document.getElementById('mainContainer');
 
 const board = [
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w'
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww'
 ];
 
 //Função para criação de células
