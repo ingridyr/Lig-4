@@ -1,20 +1,4 @@
-
-.playerOne {
-    background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.playerTwo {
-    background-color: rgb(17, 6, 177); /* uma cor qualquer só para teste */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-div.pieces {
-    display: flex;
+/* Criação do tabuleiro */
 
 #mainContainer{
     width: 100%;
@@ -42,3 +26,24 @@ header{
     border: 2px solid red;
 
 }
+
+/* Criação das peças */
+.playerOne {
+    background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.playerTwo {
+    background-color: rgb(17, 6, 177); /* uma cor qualquer só para teste */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+div.pieces {
+    display: flex;
+
+}
+
