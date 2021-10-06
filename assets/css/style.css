@@ -1,11 +1,16 @@
+@font-face {
+	font-family: get_schwifty;
+	src: local(Barrio), url(../fonts/get_schwifty.ttf)
+}
+
 /* Criação do tabuleiro */
 
 #mainContainer{
     width: 100%;
     height: 400px;
-    background-color: rgba(152, 176, 250, 0.507);
+    
     padding-top: 25px;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +26,9 @@ header{
 
 .space{
     
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(27, 253, 27);
 
 }
 
@@ -49,4 +54,31 @@ div.pieces {
 }
 
 /* estilização dos popups */
+.popUpPlayer1{
 
+}
+
+.popUpPlayer2{
+    
+}
+
+.popUpDraw{
+    
+}
+
+
+/* estilziando body */
+
+body{
+    background-image: url("../img/mobile\ fundo.jpg");
+    background-size: cover;
+    color: white;
+    
+}
+
+h1{
+    text-shadow: -3px 2px 7px #55CE23, -3px 2px 7px #FFEB24, -3px 2px 7px #FFEB24;
+    color: teal;
+    font-family: get_schwifty;
+    padding-top: 60px;
+}

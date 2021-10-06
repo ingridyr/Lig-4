@@ -1,5 +1,5 @@
 
-function popUpPlayer1(){
+function popUpOne(){
     const body      = document.querySelector("body")
     const div       = document.createElement("div")
     div.className   = "popUpPlayer1"
@@ -8,10 +8,10 @@ function popUpPlayer1(){
     div.appendChild(paragraph)
     body.appendChild(div)
 }
-popUpPlayer1()
+popUpOne()
 
 
-function popUpPlayer2(){
+function popUpTwo(){
     const body      = document.querySelector("body")
     const div       = document.createElement("div")
     div.className   = "popUpPlayer2"
@@ -21,8 +21,21 @@ function popUpPlayer2(){
     body.appendChild(div)
     div.appendChild(paragraph)
 }
-popUpPlayer2()
+popUpTwo()
+
+function popUpDraw(){
+    const body      = document.querySelector("body")
+    const div       = document.createElement("div")
+    div.className   = "popUpDraw"
+
+    const paragraph = document.createElement("p")
+
+    body.appendChild(div)
+    div.appendChild(paragraph)
+}
+popUpDraw()
+
 
 //substituir o alert
-//tem que ter um para o B e um para o R
+//tem que ter um para o B, um para o R e um para empate
 //if adiciona uma classe
