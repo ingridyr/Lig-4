@@ -20,7 +20,7 @@ header{
 }
 
 
-.space0, space1, space2, space3, space4, space5, space6{
+.space0, .space1, .space2, .space3, .space4, .space5, .space6{
     
     width: 50px;
     height: 50px;
