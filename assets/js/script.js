@@ -28,7 +28,7 @@ function createBoard(){
         for(let j = 0; j < board[i].length; j++){
             let letter = board[i][j];
             if(letter === 'w'){
-                createDiv(row,'space')
+                createDiv(row,'space' + j)
             }
         }
     }
