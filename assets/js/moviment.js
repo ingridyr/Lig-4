@@ -15,7 +15,7 @@ let clic = true
 
 function addPiece(evt){
 
-const column = evt.currentTarget
+const column = evt.target
 console.log(evt)
 
 if(clic && evt.srcElement.childNodes.length === 0){
