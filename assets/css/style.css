@@ -54,6 +54,13 @@ div.pieces {
 }
 
 /* estilização dos popups */
+.popUpPlayer1, .popUpPlayer2, .popUpDraw{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
 .popUpPlayer1{
 
 }
