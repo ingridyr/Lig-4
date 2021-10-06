@@ -22,9 +22,9 @@ function popUpOne() {
     const source = document.createElement("source")
     source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
     source.type  = "audio/mp3"
-    
-    audio.appendChild(source)
 
+
+    audio.appendChild(source)
     div.appendChild(audio)
     div.appendChild(button2)
     div.appendChild(paragraph)
@@ -33,6 +33,7 @@ function popUpOne() {
 
     button2.addEventListener("click",function(){
         div.className = "display"
+        audio.pause()
     })
 }
 
@@ -70,6 +71,7 @@ function popUpTwo() {
 
     button2.addEventListener("click",function(){
         div.className = "display"
+        audio.pause()
     })
 }
 
@@ -107,6 +109,7 @@ function popUpDraw() {
 
     button2.addEventListener("click",function(){
         div.className = "display"
+        audio.pause()
     })
 }
 
