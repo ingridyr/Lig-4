@@ -33,6 +33,7 @@ header{
 }
 
 /* Criação das peças */
+
 .playerOne {
     background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
     width: 30px;
@@ -51,6 +52,20 @@ div.pieces {
     display: flex;
 
 }
+
+/* estilização dos popups */
+.popUpPlayer1{
+
+}
+
+.popUpPlayer2{
+    
+}
+
+.popUpDraw{
+    
+}
+
 
 /* estilziando body */
 
