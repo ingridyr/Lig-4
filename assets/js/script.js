@@ -50,7 +50,8 @@ function creatorOne(){
     const playerOne = document.createElement('div')
     playerOne.classList.add("playerOne")
 
-    pieces.appendChild(playerOne)
+    //pieces.appendChild(playerOne)
+    return playerOne
 }
 creatorOne()//teste
 
@@ -58,7 +59,8 @@ function creatorTwo(){
     const playerTwo = document.createElement('div')
     playerTwo.classList.add("playerTwo")
 
-    pieces.appendChild(playerTwo)
+    //pieces.appendChild(playerTwo)
+    return playerTwo
 }
 creatorTwo()//teste
 /* ------------------------------------------------- */
