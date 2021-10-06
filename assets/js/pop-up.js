@@ -10,7 +10,6 @@ function popUpOne(){
 }
 popUpOne()
 
-
 function popUpTwo(){
     const body      = document.querySelector("body")
     const div       = document.createElement("div")
