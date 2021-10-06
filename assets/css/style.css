@@ -54,6 +54,9 @@ div.pieces {
 /* estilização dos popups */
 .popUpPlayer1, .popUpPlayer2, .popUpDraw{
     position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,100%);
     background-color: white;
     border-radius: 10px;
 
@@ -86,4 +89,8 @@ h1{
     color: teal;
     font-family: get_schwifty;
     padding-top: 60px;
+}
+
+.display{
+    display: none;
 }

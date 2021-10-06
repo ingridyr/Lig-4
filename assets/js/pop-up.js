@@ -9,7 +9,7 @@ function popUpOne() {
     button2.innerText = "X"
 
     const paragraph = document.createElement("p")
-    paragraph.innerText = `parabéns, ${} você venceu!`
+    paragraph.innerText = `parabéns,  você venceu!`
 
     const button = document.createElement('button')
     button.className = "resetButton"
@@ -20,8 +20,12 @@ function popUpOne() {
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
+
+    button2.addEventListener("click",function(){
+        div.className = "display"
+    })
 }
-popUpOne()
+
 
 function popUpTwo() {
     const body = document.querySelector("body")
@@ -33,7 +37,7 @@ function popUpTwo() {
     button2.innerText = "X"
 
     const paragraph = document.createElement("p")
-    paragraph.innerText = `parabéns, ${} você venceu!`
+    paragraph.innerText = `parabéns,  você venceu!`
 
     const button = document.createElement('button')
     button.className = "resetButton"
@@ -44,8 +48,12 @@ function popUpTwo() {
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
+
+    button2.addEventListener("click",function(){
+        div.className = "display"
+    })
 }
-popUpTwo()
+
 
 function popUpDraw() {
     const body = document.querySelector("body")
@@ -68,8 +76,12 @@ function popUpDraw() {
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
+
+    button2.addEventListener("click",function(){
+        div.className = "display"
+    })
 }
-popUpDraw()
+
 
 
 //substituir o alert
