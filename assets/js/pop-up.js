@@ -1,55 +1,70 @@
 
-function popUpOne(){
-    const body     = document.querySelector("body")
-    const div      = document.createElement("div")
-    div.className  = "popUpPlayer1"
+function popUpOne() {
+    const body = document.querySelector("body")
+    const div = document.createElement("div")
+    div.className = "popUpPlayer1"
 
-    const paragraph     = document.createElement("p")
+    const button2 = document.createElement("button")
+    button2.className = "closetButton"
+    button2.innerText = "X"
+
+    const paragraph = document.createElement("p")
     paragraph.innerText = `parabéns, ${} você venceu!`
 
-    const button     = document.createElement('button')
+    const button = document.createElement('button')
     button.className = "resetButton"
     button.innerText = "Jogar novamente!"
-    button.type      = "reset"
+    button.type = "reset"
 
+    div.appendChild(button2)
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
 }
 popUpOne()
 
-function popUpTwo(){
-    const body      = document.querySelector("body")
-    const div       = document.createElement("div")
-    div.className   = "popUpPlayer2"
+function popUpTwo() {
+    const body = document.querySelector("body")
+    const div = document.createElement("div")
+    div.className = "popUpPlayer2"
 
-    const paragraph     = document.createElement("p")
+    const button2 = document.createElement("button")
+    button2.className = "closetButton"
+    button2.innerText = "X"
+
+    const paragraph = document.createElement("p")
     paragraph.innerText = `parabéns, ${} você venceu!`
 
-    const button     = document.createElement('button')
+    const button = document.createElement('button')
     button.className = "resetButton"
     button.innerText = "Jogar novamente!"
-    button.type      = "reset"
+    button.type = "reset"
 
+    div.appendChild(button2)
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
 }
 popUpTwo()
 
-function popUpDraw(){
-    const body     = document.querySelector("body")
-    const div      = document.createElement("div")
-    div.className  = "popUpDraw"
+function popUpDraw() {
+    const body = document.querySelector("body")
+    const div = document.createElement("div")
+    div.className = "popUpDraw"
 
-    const paragraph     = document.createElement("p")
+    const button2 = document.createElement("button")
+    button2.className = "closetButton"
+    button2.innerText = "X"
+
+    const paragraph = document.createElement("p")
     paragraph.innerText = "\"Wubba lubba dub dub!\" Deu empate!"
 
-    const button     = document.createElement('button')
+    const button = document.createElement('button')
     button.className = "resetButton"
     button.innerText = "Jogar novamente!"
-    button.type      = "reset"
+    button.type = "reset"
 
+    div.appendChild(button2)
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
