@@ -5,5 +5,4 @@ function popUp(){
     body.appendChild(div)
     div.appendChild(paragraph)
 
-    
 }
