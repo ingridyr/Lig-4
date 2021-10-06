@@ -1,21 +1,31 @@
 
 function popUpOne() {
-    const body = document.querySelector("body")
-    const div = document.createElement("div")
+    const body    = document.querySelector("body")
+    const div     = document.createElement("div")
     div.className = "popUpPlayer1"
 
-    const button2 = document.createElement("button")
+    const button2     = document.createElement("button")
     button2.className = "closetButton"
     button2.innerText = "X"
 
-    const paragraph = document.createElement("p")
+    const paragraph     = document.createElement("p")
     paragraph.innerText = `parabéns,  você venceu!`
 
-    const button = document.createElement('button')
+    const button     = document.createElement('button')
     button.className = "resetButton"
     button.innerText = "Jogar novamente!"
-    button.type = "reset"
+    button.type      = "reset"
 
+    const audio    = document.createElement("audio")
+    audio.autoplay = "autoplay"
+    audio.loop     = "true"
+    const source = document.createElement("source")
+    source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
+    source.type  = "audio/mp3"
+    
+    audio.appendChild(source)
+
+    div.appendChild(audio)
     div.appendChild(button2)
     div.appendChild(paragraph)
     div.appendChild(button)
@@ -28,22 +38,31 @@ function popUpOne() {
 
 
 function popUpTwo() {
-    const body = document.querySelector("body")
-    const div = document.createElement("div")
+    const body    = document.querySelector("body")
+    const div     = document.createElement("div")
     div.className = "popUpPlayer2"
 
-    const button2 = document.createElement("button")
+    const button2     = document.createElement("button")
     button2.className = "closetButton"
     button2.innerText = "X"
 
-    const paragraph = document.createElement("p")
+    const paragraph     = document.createElement("p")
     paragraph.innerText = `parabéns,  você venceu!`
 
-    const button = document.createElement('button')
+    const button     = document.createElement('button')
     button.className = "resetButton"
     button.innerText = "Jogar novamente!"
-    button.type = "reset"
+    button.type      = "reset"
 
+    const audio    = document.createElement("audio")
+    audio.autoplay = "autoplay"
+    audio.loop     = "true"
+    const source = document.createElement("source")
+    source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
+    source.type  = "audio/mp3"
+    
+    audio.appendChild(source)
+    div.appendChild(audio)
     div.appendChild(button2)
     div.appendChild(paragraph)
     div.appendChild(button)
@@ -56,22 +75,31 @@ function popUpTwo() {
 
 
 function popUpDraw() {
-    const body = document.querySelector("body")
-    const div = document.createElement("div")
+    const body    = document.querySelector("body")
+    const div     = document.createElement("div")
     div.className = "popUpDraw"
 
-    const button2 = document.createElement("button")
+    const button2     = document.createElement("button")
     button2.className = "closetButton"
     button2.innerText = "X"
 
-    const paragraph = document.createElement("p")
+    const paragraph     = document.createElement("p")
     paragraph.innerText = "\"Wubba lubba dub dub!\" Deu empate!"
 
-    const button = document.createElement('button')
+    const button     = document.createElement('button')
     button.className = "resetButton"
     button.innerText = "Jogar novamente!"
-    button.type = "reset"
+    button.type      = "reset"
 
+    const audio    = document.createElement("audio")
+    audio.autoplay = "autoplay"
+    audio.loop     = "true"
+    const source = document.createElement("source")
+    source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
+    source.type  = "audio/mp3"
+    
+    audio.appendChild(source)
+    div.appendChild(audio)
     div.appendChild(button2)
     div.appendChild(paragraph)
     div.appendChild(button)
