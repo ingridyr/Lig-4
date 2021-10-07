@@ -1,11 +1,3 @@
-let teste = [
-    "WWWWWWW",
-    "WWWWWWW",
-    "WWWWWWW",
-    "WWWWWWW",
-    "WWWWWWW",
-    "WWWWWWW"
-];
 
 function victory(array) {
 
@@ -21,7 +13,7 @@ function victory(array) {
 
             for (let j = 0; j < modColumns; j++) {
     
-                if (array[i][j] == "B") {
+                if (array[i][j] == 1) {
     
                     if (array[i][j] == array[i][j + 1] && array[i][j] == array[i][j + 2] && array[i][j] == array[i][j + 3]) {
                         alert("vitoria horizontal do preto")
@@ -29,7 +21,7 @@ function victory(array) {
                     }
                 }
 
-                if (array[i][j] == "R") {
+                if (array[i][j] == 2) {
     
                     if (array[i][j] == array[i][j + 1] && array[i][j] == array[i][j + 2] && array[i][j] == array[i][j + 3]) {
                         alert("vitoria horizontal do vermelho")
@@ -54,14 +46,14 @@ function victory(array) {
 
             for (let j = 0; j < array[1].length; j++) {
     
-                if (array[i][j] == "B") {
+                if (array[i][j] == 1) {
     
                     if (array[i][j] == array[i + 1][j] && array[i][j] == array[i + 2][j] && array[i][j] == array[i + 3][j]) {
                         alert("vitoria vertical do preto")
                         result = true
                     }
                 }
-                if (array[i][j] == "R") {
+                if (array[i][j] == 2) {
     
                     if (array[i][j] == array[i + 1][j] && array[i][j] == array[i + 2][j] && array[i][j] == array[i + 3][j]) {
                         alert("vitoria vertical do vermelho")
@@ -85,14 +77,14 @@ function victory(array) {
 
             for (let j = 0; j < modColumns; j++) {
     
-                if (array[i][j] == "B") {
+                if (array[i][j] == 1) {
     
                     if (array[i][j] == array[i + 1][j + 1] && array[i][j] == array[i + 2][j + 2] && array[i][j] == array[i + 3][j + 3]) {
                         alert("vitoria diagonal direita do preto")
                         result = true
                     }
                 }
-                if (array[i][j] == "R") {
+                if (array[i][j] == 2) {
                     if (array[i][j] == array[i + 1][j + 1] && array[i][j] == array[i + 2][j + 2] && array[i][j] == array[i + 3][j + 3]) {
                         alert("vitoria diagonal direita do vermelho")
                         result = true
@@ -115,14 +107,14 @@ function victory(array) {
 
             for (let j = 0; j < array[1].length; j++) {
     
-                if (array[i][j] == "B") {
+                if (array[i][j] == 1) {
     
                     if (array[i][j] == array[i + 1][j - 1] && array[i][j] == array[i + 2][j - 2] && array[i][j] == array[i + 3][j - 3]) {
                         alert("vitoria diagonal esquerda preto")
                         result = true
                     }
                 }
-                if (array[i][j] == "R") {
+                if (array[i][j] == 2) {
                     if (array[i][j] == array[i + 1][j - 1] && array[i][j] == array[i + 2][j - 2] && array[i][j] == array[i + 3][j - 3]) {
                         alert("vitoria diagonal esquerda vermelho")
                         result = true
