@@ -12,14 +12,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
 
 .rowContainer{
-    display: flex;
+  display: flex;
 }
 
 .space{
@@ -33,22 +34,21 @@ header{
 /* Criação das peças */
 
 .playerOne {
-    background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .playerTwo {
-    background-color: rgb(17, 6, 177); /* uma cor qualquer só para teste */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  background-color: rgb(17, 6, 177); /* uma cor qualquer só para teste */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 div.pieces {
-    display: flex;
-
+  display: flex;
 }
 
 /* estilização dos popups */
