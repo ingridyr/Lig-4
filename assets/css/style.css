@@ -1,14 +1,18 @@
+@font-face {
+	font-family: get_schwifty;
+	src: local(Barrio), url(../fonts/get_schwifty.ttf)
+}
+
 /* Criação do tabuleiro */
 
-#mainContainer {
-  width: 100%;
-  height: 400px;
-  background-color: rgba(152, 176, 250, 0.507);
-  padding-top: 25px;
+#mainContainer{
+    width: 100%;
+    height: 400px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 header {
@@ -21,13 +25,14 @@ header {
 
 .space{
     
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgb(27, 253, 27);
 
 }
 
 /* Criação das peças */
+
 .playerOne {
   background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
   width: 30px;
@@ -44,4 +49,48 @@ header {
 
 div.pieces {
   display: flex;
+}
+
+/* estilização dos popups */
+.popUpPlayer1, .popUpPlayer2, .popUpDraw{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,100%);
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.popUpPlayer1{
+
+}
+
+.popUpPlayer2{
+    
+}
+
+.popUpDraw{
+    
+}
+
+
+/* estilziando body */
+
+body{
+    background-image: url("../img/mobile\ fundo.jpg");
+    background-size: cover;
+    color: white;
+    
+}
+
+h1{
+    text-shadow: -3px 2px 7px #55CE23, -3px 2px 7px #FFEB24, -3px 2px 7px #FFEB24;
+    color: teal;
+    font-family: get_schwifty;
+    padding-top: 60px;
+}
+
+.display{
+    display: none;
 }
