@@ -13,6 +13,7 @@ const board = [
 
 function createDiv(row,classList, id){
     const cell = document.createElement('div');
+    
     cell.classList.add(classList);
     cell.id = id;
     row.appendChild(cell);
@@ -30,7 +31,7 @@ function createBoard(){
             let letter = board[i][j];
           
             if(letter === 0){
-                createDiv(row,'space', 'column' + j)
+                createDiv(row,'space',j)
             }
         }
     }
@@ -62,10 +63,6 @@ function creatorTwo(){
 
     return playerTwo
 }
-
-
-
-
 
 
 
