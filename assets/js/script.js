@@ -23,7 +23,7 @@ function createDiv(row,classList, id){
 function createBoard(){
     for(let i = 0; i < board.length; i++){
         const row = document.createElement('div');
-        row.className = 'rowContainer' + i;
+        row.className = 'rowContainer';
         mainContainer.appendChild(row);
 
         for(let j = 0; j < board[i].length; j++){
