@@ -62,7 +62,7 @@ function popUpOne() {
     button2.innerText = "X"
 
     const paragraph     = document.createElement("p")
-    paragraph.innerText = "Parabéns Rick, você venceu!"
+    paragraph.innerText = "Parabéns Morty, você venceu!"
 
     const button     = document.createElement('button')
     button.className = "resetButton"
@@ -108,7 +108,7 @@ function popUpTwo() {
     button2.innerText = "X"
 
     const paragraph     = document.createElement("p")
-    paragraph.innerText = "Parabéns Morty, você venceu!"
+    paragraph.innerText = "Parabéns Rick, você venceu!"
 
     const button     = document.createElement('button')
     button.className = "resetButton"

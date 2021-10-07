@@ -6,20 +6,18 @@ let player = 1
 let click = true
 
 function chose_Rick(){
-    console.log("rick")
     const popUpRick = document.querySelector(".choosePlayer")
     popUpRick.style.display="none"
     click=true
-    console.log(click)
+    
 
 }
 
 function chose_Morty(){
-    console.log("morty")
     const popUpRick = document.querySelector(".choosePlayer")
     popUpRick.style.display="none"
     click=false
-    console.log(click)
+    
 }
 
 
