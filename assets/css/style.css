@@ -5,7 +5,7 @@
 
 /* Criação do tabuleiro */
 
-#mainContainer{
+#mainContainer {
     width: 100%;
     height: 400px;
     padding-top: 25px;
@@ -19,16 +19,15 @@ header {
   text-align: center;
 }
 
-.rowContainer{
+.rowContainer {
   display: flex;
   flex-direction:row;
 }
 
-.space{
-    
-    width: 38px;
-    height: 38px;
-    border: 2px solid rgb(27, 253, 27);
+.space {
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgb(27, 253, 27);
 
 }
 
@@ -53,6 +52,7 @@ div.pieces {
 }
 
 /* estilização dos popups */
+
 
 /*Pop-up inicial*/
 .introduction{
@@ -111,58 +111,130 @@ div.pieces {
 }
 
 
+.popUpPlayer1, .popUpPlayer2, .popUpDraw {
+  background-image: url(../img/git\ portal.gif);
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%,100%);
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+}
+
+.popUpPlayer1 img, .popUpPlayer2 img {
+  width: 130px;
+  padding-left: 10px;
+}
+
+.popUpDraw img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.popUpPlayer1>p, .popUpPlayer2>p, .popUpDraw>p{
+  background-color: #4dff00;
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: get_schwifty;
+}
+
+.popUpPlayer1 {
+
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.popUpPlayer2 {
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.popUpDraw {
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.closetButton {
+  margin-right: 50vw;
+  border: none;
+  background-color: #4dff00;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-weight: 800;
+}
 
 
-.popUpPlayer1, .popUpPlayer2, .popUpDraw{
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%,100%);
-    background-color: white;
-    border-radius: 10px;
+.resetButton {
+  border: 2px solid #4dff00;
+  background-color: black;
+  color: #4dff00;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-family: 'lato', sans-serif;
 
 }
 
-.popUpPlayer1{
-
-}
-
-.popUpPlayer2{
-    
-}
-
-.popUpDraw{
-    
+.resetButton:hover {
+  background-color: #19490465;
+  color: white;
 }
 
 
 /* estilziando body */
 
-body{
+body {
     background-image: url("../img/mobile\ fundo.jpg");
     background-size: cover;
     color: white;
     
 }
 
-h1{
+h1 {
     text-shadow: -3px 2px 7px #55CE23, -3px 2px 7px #FFEB24, -3px 2px 7px #FFEB24;
     color: teal;
     font-family: get_schwifty;
     padding-top: 60px;
 }
 
-.display{
+.display {
     display: none;
 }
 
-.player1{
+.player1 {
   background-image: url('../img/player1.png');
   background-size: cover;
   width: 30px;
   height: 30px;
 }
-.player2{
+
+.player2 {
   background-image: url('../img/player2.png');
   background-size: cover;
   width: 30px;
