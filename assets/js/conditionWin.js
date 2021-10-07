@@ -126,6 +126,10 @@ function victory(array) {
     }
     console.log(leftDiagonal())
 
+
+    if(array[0][0] !== 0 && array[0][1] !== 0 && array[0][2] !== 0 && array[0][3] !== 0 && array[0][4] !== 0 && array[0][5] !== 0 && array[0][6] !== 0 ){
+        alert("empate")
+    }
     // if(vertical() === false && horizontal() === false && diagonal() === false && leftDiagonal() === false){
     //     alert("empate")
     // }
