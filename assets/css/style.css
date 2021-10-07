@@ -21,6 +21,7 @@ header {
 
 .rowContainer{
   display: flex;
+  flex-direction:row;
 }
 
 .space{
