@@ -19,17 +19,16 @@ function addPiece(evt){
     let id = evt.target.id
     
 
-
     if (click){
         click = false
-        player = 2
+        player = 1
     }else{
         click = true
-        player = 1
+        player = 2
     }
 
     for(let i = board.length-1; i>=0; i--){
-        if(board[i][id]===0){
+        if(board[i][id]=== 0){
             board[i][id] = player
             break
         }

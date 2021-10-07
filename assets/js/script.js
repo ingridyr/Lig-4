@@ -30,7 +30,7 @@ function createBoard(){
             let letter = board[i][j];
           
             if(letter === 0){
-                createDiv(row,'space', 'column' + j)
+                createDiv(row,'space', j)
             }
         }
     }
