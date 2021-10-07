@@ -16,7 +16,7 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i][j + 1] && array[i][j] == array[i][j + 2] && array[i][j] == array[i][j + 3]) {
-                        popUpOne()
+                        popUpTwo()
                         result = true
 
                     }
@@ -25,7 +25,7 @@ function victory(array) {
                 if (array[i][j] == 'player2') {
     
                     if (array[i][j] == array[i][j + 1] && array[i][j] == array[i][j + 2] && array[i][j] == array[i][j + 3]) {
-                        popUpTwo()
+                        popUpOne()
                         result = true
 
                     }
@@ -51,14 +51,14 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i + 1][j] && array[i][j] == array[i + 2][j] && array[i][j] == array[i + 3][j]) {
-                        popUpOne()
+                        popUpTwo()
                         result = true
                     }
                 }
                 if (array[i][j] == 'player2') {
     
                     if (array[i][j] == array[i + 1][j] && array[i][j] == array[i + 2][j] && array[i][j] == array[i + 3][j]) {
-                        popUpTwo()
+                        popUpOne()
                         result = true
                     }
                 }
@@ -81,13 +81,13 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i + 1][j + 1] && array[i][j] == array[i + 2][j + 2] && array[i][j] == array[i + 3][j + 3]) {
-                        popUpOne()
+                        popUpTwo()
                         result = true
                     }
                 }
                 if (array[i][j] == 'player2') {
                     if (array[i][j] == array[i + 1][j + 1] && array[i][j] == array[i + 2][j + 2] && array[i][j] == array[i + 3][j + 3]) {
-                        popUpTwo()
+                        popUpOne()
                         result = true
                     }
                 }
@@ -111,13 +111,13 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i + 1][j - 1] && array[i][j] == array[i + 2][j - 2] && array[i][j] == array[i + 3][j - 3]) {
-                        popUpOne()
+                        popUpTwo()
                         result = true
                     }
                 }
                 if (array[i][j] == 'player2') {
                     if (array[i][j] == array[i + 1][j - 1] && array[i][j] == array[i + 2][j - 2] && array[i][j] == array[i + 3][j - 3]) {
-                        popUpTwo()
+                        popUpOne()
                         result = true
 
                     }
