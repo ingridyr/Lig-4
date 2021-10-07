@@ -95,3 +95,16 @@ h1{
 .display{
     display: none;
 }
+
+.player1{
+  background-image: url('../img/player1.png');
+
+  width: 30px;
+  height: 30px;
+}
+.player2{
+  background-image: url('../img/player2.png');
+
+  width: 30px;
+  height: 30px;
+}
