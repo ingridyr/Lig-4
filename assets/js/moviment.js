@@ -3,7 +3,17 @@ const rows = document.querySelector('#mainContainer');
 
 
 let player = 1
-let click = true
+let click = undefined
+
+function chose_Rick(){
+    click = true
+
+}
+
+function chose_Morty(){
+    click = false
+}
+
 
 function addPiece(evt) {
     let column = evt.target
