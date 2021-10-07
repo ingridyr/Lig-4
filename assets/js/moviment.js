@@ -1,14 +1,5 @@
 
-//------------------------------------------------------
-//Inicio da alteração entre os jogadores e adiciona peça
-
-//Coloca o add em cada célula
-
 const rows = document.querySelector('#mainContainer');
-   rows.childNodes.forEach(row => {
-    row.addEventListener('click', addPiece)
-});
-
 
 
 let player = 1
@@ -18,36 +9,46 @@ function addPiece(evt){
     let column = evt.target
     let id = evt.target.id
     
+    console.log(column)
 
     if (click){
         click = false
-        player = 1
+        player = 'player1'
     }else{
         click = true
-        player = 2
+        player = 'player2'
     }
 
+    let a = null
     for(let i = board.length-1; i>=0; i--){
         if(board[i][id]=== 0){
             board[i][id] = player
+            a = i
             break
         }
     }
-console.log(board)
+    console.log(board)
 
+    const rowsInteration = rows.childNodes
 
+    for(let i = 0; i < rowsInteration.length; i++){
+        const currentRow = rowsInteration[i].childNodes;
 
-        // if(click ){
-        //     let piece = creatorOne()
-        //     //for(let i = board1.lengh-1; i>=0; i--){}
-            
-        //     column.appendChild(piece)
-        //     click = false
-            
-        // }else if(click === false && evt.srcElement.childNodes.length === 0){
-        //     let piece = creatorTwo()
-        //     column.appendChild(piece)
-        //     click = true
-        // }
+        for(let j = 0; j < currentRow.length; j++){
+            const currentBlock = currentRow[j]
 
+            if(i === a && j === Number(id)){
+                const div = document.createElement('div');
+                div.classList.add(player);
+                currentBlock.appendChild(div);
+            }
+        }
+    }
+
+    victory(board)
 }
+
+
+rows.childNodes.forEach(row => {
+    row.addEventListener('click', addPiece)
+});
