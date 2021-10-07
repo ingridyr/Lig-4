@@ -16,16 +16,18 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i][j + 1] && array[i][j] == array[i][j + 2] && array[i][j] == array[i][j + 3]) {
-                        alert("vitoria horizontal do preto")
+                        popUpTwo()
                         result = true
+
                     }
                 }
 
                 if (array[i][j] == 'player2') {
     
                     if (array[i][j] == array[i][j + 1] && array[i][j] == array[i][j + 2] && array[i][j] == array[i][j + 3]) {
-                        alert("vitoria horizontal do vermelho")
+                        popUpOne()
                         result = true
+
                     }
                 }
             }
@@ -33,7 +35,7 @@ function victory(array) {
         }
         return result
     }
-    console.log(horizontal())
+    horizontal()
     
 
     //vitoria vertical
@@ -49,14 +51,14 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i + 1][j] && array[i][j] == array[i + 2][j] && array[i][j] == array[i + 3][j]) {
-                        alert("vitoria vertical do preto")
+                        popUpTwo()
                         result = true
                     }
                 }
                 if (array[i][j] == 'player2') {
     
                     if (array[i][j] == array[i + 1][j] && array[i][j] == array[i + 2][j] && array[i][j] == array[i + 3][j]) {
-                        alert("vitoria vertical do vermelho")
+                        popUpOne()
                         result = true
                     }
                 }
@@ -64,13 +66,12 @@ function victory(array) {
         }
         return result
     }
-    console.log(vertical())
+    vertical()
 
-    
 
     //vitoria diagonal 
 
-    function diagonal(){
+    function rightDiagonal(){
         let result = false
 
         for (let i = 0; i < modLines; i++) {
@@ -80,13 +81,13 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i + 1][j + 1] && array[i][j] == array[i + 2][j + 2] && array[i][j] == array[i + 3][j + 3]) {
-                        alert("vitoria diagonal direita do preto")
+                        popUpTwo()
                         result = true
                     }
                 }
                 if (array[i][j] == 'player2') {
                     if (array[i][j] == array[i + 1][j + 1] && array[i][j] == array[i + 2][j + 2] && array[i][j] == array[i + 3][j + 3]) {
-                        alert("vitoria diagonal direita do vermelho")
+                        popUpOne()
                         result = true
                     }
                 }
@@ -94,7 +95,7 @@ function victory(array) {
         }
         return result
     }
-    console.log(diagonal())
+    rightDiagonal()
 
     
 
@@ -110,24 +111,28 @@ function victory(array) {
                 if (array[i][j] == 'player1') {
     
                     if (array[i][j] == array[i + 1][j - 1] && array[i][j] == array[i + 2][j - 2] && array[i][j] == array[i + 3][j - 3]) {
-                        alert("vitoria diagonal esquerda preto")
+                        popUpTwo()
                         result = true
                     }
                 }
                 if (array[i][j] == 'player2') {
                     if (array[i][j] == array[i + 1][j - 1] && array[i][j] == array[i + 2][j - 2] && array[i][j] == array[i + 3][j - 3]) {
-                        alert("vitoria diagonal esquerda vermelho")
+                        popUpOne()
                         result = true
+
                     }
                 }
             }
         }
         return result
     }
-    console.log(leftDiagonal())
+    leftDiagonal()
 
-    // if(vertical() === false && horizontal() === false && diagonal() === false && leftDiagonal() === false){
-    //     alert("empate")
-    // }
+    //empate
+
+    if(array[0][0] !== 0 && array[0][1] !== 0 && array[0][2] !== 0 && array[0][3] !== 0 && array[0][4] !== 0 && array[0][5] !== 0 && array[0][6] !== 0 ){
+        popUpDraw()
+    }
+    
     
 }

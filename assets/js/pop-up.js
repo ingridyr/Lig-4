@@ -62,7 +62,7 @@ function popUpOne() {
     button2.innerText = "X"
 
     const paragraph     = document.createElement("p")
-    paragraph.innerText = `parabéns,  você venceu!`
+    paragraph.innerText = "Parabéns Rick, você venceu!"
 
     const button     = document.createElement('button')
     button.className = "resetButton"
@@ -76,10 +76,13 @@ function popUpOne() {
     source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
     source.type  = "audio/mp3"
 
+    const img = document.createElement("img")
+    img.src   = "./assets/img/player2.png"
 
     audio.appendChild(source)
     div.appendChild(audio)
     div.appendChild(button2)
+    div.appendChild(img)
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
@@ -88,6 +91,10 @@ function popUpOne() {
         div.className = "display"
         audio.pause()
     })
+
+    button.addEventListener('click', reset = () => {
+        location.reload()
+    });
 }
 
 
@@ -101,7 +108,7 @@ function popUpTwo() {
     button2.innerText = "X"
 
     const paragraph     = document.createElement("p")
-    paragraph.innerText = `parabéns,  você venceu!`
+    paragraph.innerText = "Parabéns Morty, você venceu!"
 
     const button     = document.createElement('button')
     button.className = "resetButton"
@@ -114,10 +121,14 @@ function popUpTwo() {
     const source = document.createElement("source")
     source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
     source.type  = "audio/mp3"
-    
+
+    const img = document.createElement("img")
+    img.src   = "./assets/img/player1.png"
+
     audio.appendChild(source)
     div.appendChild(audio)
     div.appendChild(button2)
+    div.appendChild(img)
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
@@ -126,6 +137,10 @@ function popUpTwo() {
         div.className = "display"
         audio.pause()
     })
+
+    button.addEventListener('click', reset = () => {
+        location.reload()
+    });
 }
 
 
@@ -152,10 +167,15 @@ function popUpDraw() {
     const source = document.createElement("source")
     source.src   = "./assets/music/rick-and-morty-theme-song.mp3"
     source.type  = "audio/mp3"
+
+    const img = document.createElement("img")
+    img.src   = "./assets/img/empate.png"
+
     
     audio.appendChild(source)
     div.appendChild(audio)
     div.appendChild(button2)
+    div.appendChild(img)
     div.appendChild(paragraph)
     div.appendChild(button)
     body.appendChild(div)
@@ -164,6 +184,10 @@ function popUpDraw() {
         div.className = "display"
         audio.pause()
     })
+
+    button.addEventListener('click', reset = () => {
+        location.reload()
+    });
 }
 
 
