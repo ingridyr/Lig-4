@@ -3,15 +3,23 @@ const rows = document.querySelector('#mainContainer');
 
 
 let player = 1
-let click = undefined
+let click = true
 
 function chose_Rick(){
-    click = true
+    console.log("rick")
+    const popUpRick = document.querySelector(".choosePlayer")
+    popUpRick.style.display="none"
+    click=true
+    console.log(click)
 
 }
 
 function chose_Morty(){
-    click = false
+    console.log("morty")
+    const popUpRick = document.querySelector(".choosePlayer")
+    popUpRick.style.display="none"
+    click=false
+    console.log(click)
 }
 
 

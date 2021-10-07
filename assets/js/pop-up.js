@@ -18,10 +18,13 @@ firstPopup.appendChild(btn);
 const btnSelected = document.querySelector('.btn-popup');
 btnSelected.addEventListener('click', choosePlayer);
 
+
+
 function choosePlayer(){
     firstPopup.style.display = 'none';
 
     const divChoosePlayer = document.createElement('div');
+    divChoosePlayer.classList.add("kill")
     const divRick = document.createElement('div');
     const divMorty = document.createElement('div');
     const btn = document.createElement('button');
