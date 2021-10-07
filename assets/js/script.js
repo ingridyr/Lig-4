@@ -23,11 +23,12 @@ function createDiv(row,classList, id){
 function createBoard(){
     for(let i = 0; i < board.length; i++){
         const row = document.createElement('div');
-        row.className = 'rowContainer';
+        row.className = 'rowContainer' + i;
         mainContainer.appendChild(row);
 
         for(let j = 0; j < board[i].length; j++){
             let letter = board[i][j];
+          
             if(letter === 0){
                 createDiv(row,'space', 'column' + j)
             }
@@ -51,7 +52,6 @@ function creatorOne(){
     const playerOne = document.createElement('div')
     playerOne.classList.add("playerOne")
 
-    
     return playerOne
 }
 
@@ -59,7 +59,7 @@ function creatorOne(){
 function creatorTwo(){
     const playerTwo = document.createElement('div')
     playerTwo.classList.add("playerTwo")
-    
+
     return playerTwo
 }
 
