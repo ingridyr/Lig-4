@@ -1,49 +1,57 @@
 /* Criação do tabuleiro */
 
-#mainContainer{
-    width: 100%;
-    height: 400px;
-    background-color: rgba(152, 176, 250, 0.507);
-    padding-top: 25px;
+#mainContainer {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(152, 176, 250, 0.507);
+  padding-top: 25px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
 
-.rowContainer{
-    display: flex;
+.rowContainer0,
+.rowContainer1,
+.rowContainer2,
+.rowContainer3,
+.rowContainer4,
+.rowContainer5,
+.rowContainer6 {
+  display: flex;
 }
 
-.space{
-    
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
-
+.space0,
+.space1,
+.space2,
+.space3,
+.space4,
+.space5,
+.space6 {
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
 }
 
 /* Criação das peças */
 .playerOne {
-    background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  background-color: rgb(6, 151, 177); /* uma cor qualquer só para teste */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .playerTwo {
-    background-color: rgb(17, 6, 177); /* uma cor qualquer só para teste */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  background-color: rgb(17, 6, 177); /* uma cor qualquer só para teste */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 div.pieces {
-    display: flex;
-
+  display: flex;
 }
-

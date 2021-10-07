@@ -1,19 +1,20 @@
 const mainContainer = document.getElementById('mainContainer');
 
 const board = [
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w',
-    'w,w,w,w,w,w,w'
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww',
+    'wwwwwww'
 ];
 
 //Função para criação de células
 
-function createDiv(row,classList){
+function createDiv(row,classList, id){
     const cell = document.createElement('div');
     cell.classList.add(classList);
+    cell.id = id;
     row.appendChild(cell);
 }
 
@@ -22,13 +23,13 @@ function createDiv(row,classList){
 function createBoard(){
     for(let i = 0; i < board.length; i++){
         const row = document.createElement('div');
-        row.className = 'rowContainer';
+        row.className = 'rowContainer' + i;
         mainContainer.appendChild(row);
 
         for(let j = 0; j < board[i].length; j++){
             let letter = board[i][j];
             if(letter === 'w'){
-                createDiv(row,'space')
+                createDiv(row,'space' +j, j)
             }
         }
     }
