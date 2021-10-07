@@ -1,3 +1,53 @@
+const firstPopup = document.createElement('div');
+const text = document.createElement('p');
+const btn = document.createElement('button');
+
+
+firstPopup.className = 'introduction';
+text.className = 'text-popup';
+btn.className = 'btn-popup';
+
+text.innerText = 'Bem vindo ao Lig-4 by Rich and Morty! Quem ligar 4 peças, na horzontal, vertical ou diagonal, ganha o jogo.'
+btn.innerText = 'Escolher jogador'
+
+
+mainContainer.appendChild(firstPopup);
+firstPopup.appendChild(text);
+firstPopup.appendChild(btn);
+
+const btnSelected = document.querySelector('.btn-popup');
+btnSelected.addEventListener('click', choosePlayer);
+
+function choosePlayer(){
+    firstPopup.style.display = 'none';
+
+    const divChoosePlayer = document.createElement('div');
+    const divRick = document.createElement('div');
+    const divMorty = document.createElement('div');
+    const btn = document.createElement('button');
+
+    mainContainer.appendChild(divChoosePlayer);
+    divChoosePlayer.appendChild(divRick);
+    divChoosePlayer.appendChild(divMorty);
+    divChoosePlayer.appendChild(btn);
+    
+    divChoosePlayer.className = 'choosePlayer';
+    divRick.className = 'divPlayer1';
+    divMorty.className = 'divPlayer2';
+    btn.className = 'close';
+    btn.innerText = 'X';
+
+    const choseRick = document.querySelector('.divPlayer1');
+    const choseMorty = document.querySelector('.divPlayer2');
+    const btnClose = document.querySelector('.close');
+
+    choseRick.addEventListener('click', chose_Rick)
+    choseMorty.addEventListener('click', chose_Morty)
+    btnClose.addEventListener('click', () =>{
+        divChoosePlayer.style.display = 'none';
+    })
+
+}
 
 function popUpOne() {
     const body    = document.querySelector("body")
