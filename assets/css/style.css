@@ -53,6 +53,64 @@ div.pieces {
 
 /* estilização dos popups */
 
+
+/*Pop-up inicial*/
+.introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+
+  position: absolute;
+
+  background-color: rgba(255, 231, 10, 0.835);
+}
+.text-popup{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  text-align: center;
+}
+.btn-popup{
+ display: flex;
+}
+
+.choosePlayer{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  border-radius: 5px;
+  
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  
+  position: absolute;
+  
+  background-color: rgba(255, 238, 0, 0.726);
+}
+
+.divPlayer1{
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/player1.png');
+}
+
+.divPlayer2{
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/player2.png');
+}
+
+
 .popUpPlayer1, .popUpPlayer2, .popUpDraw {
   background-image: url(../img/git\ portal.gif);
   position: absolute;
@@ -171,14 +229,14 @@ h1 {
 
 .player1 {
   background-image: url('../img/player1.png');
-
+  background-size: cover;
   width: 30px;
   height: 30px;
 }
 
 .player2 {
   background-image: url('../img/player2.png');
-
+  background-size: cover;
   width: 30px;
   height: 30px;
 }
