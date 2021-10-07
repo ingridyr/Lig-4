@@ -4,64 +4,11 @@
 
 //Coloca o add em cada célula
 
-let  col0= document.querySelectorAll('.space0') ; 
+const rows = document.querySelector('#mainContainer');
+   rows.childNodes.forEach(row => {
+    row.addEventListener('click', addPiece)
+});
 
-col0.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-let  col1= document.querySelectorAll('.space1') ; 
-
-col1.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-let  col2= document.querySelectorAll('.space2') ; 
-
-col2.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-let  col3= document.querySelectorAll('.space3') ; 
-
-col3.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-let  col4= document.querySelectorAll('.space4') ; 
-
-col4.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-let  col5= document.querySelectorAll('.space5') ; 
-
-col5.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-let  col6= document.querySelectorAll('.space6') ; 
-
-col6.forEach(function(c){
-c.addEventListener('click', addPiece);
-})
-
-// const l0 = document.querySelector('.rowContainer0')
-// l0.addEventListener('click', addPiece)
-
-
-
-
-
-
-let board1 = [
-    [0,0,0,0,0,0,0,],
-    [0,0,0,0,0,0,0,],
-    [0,0,0,0,0,0,0,],
-    [0,0,0,0,0,0,0,],
-    [0,0,0,0,0,0,0,],
-    [0,0,0,0,0,0,0,]
-]
 
 
 let player = 1
@@ -81,13 +28,13 @@ function addPiece(evt){
         player = 1
     }
 
-    for(let i = board1.length-1; i>=0; i--){
-        if(board1[i][id]===0){
-            board1[i][id] = player
+    for(let i = board.length-1; i>=0; i--){
+        if(board[i][id]===0){
+            board[i][id] = player
             break
         }
     }
-console.log(board1)
+console.log(board)
 
 
 
