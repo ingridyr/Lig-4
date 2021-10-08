@@ -9,6 +9,7 @@ function chose_Rick(){
     const popUpRick = document.querySelector(".choosePlayer")
     popUpRick.style.display="none"
     click=true
+
     
 
 }
