@@ -7,7 +7,7 @@ firstPopup.className = 'introduction';
 text.className = 'text-popup';
 btn.className = 'btn-popup';
 
-text.innerText = 'Bem vindo ao Lig-4 by Rich and Morty! Quem ligar 4 peças, na horzontal, vertical ou diagonal, ganha o jogo.'
+text.innerText = 'Bem vindo ao Lig-4 by Rick and Morty! Quem ligar 4 peças, na horzontal, vertical ou diagonal, ganha o jogo.'
 btn.innerText = 'Escolher jogador'
 
 
