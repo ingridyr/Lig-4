@@ -39,30 +39,3 @@ function createBoard(){
 createBoard()
 
 
-//aqui cria a div pai das peças
-const body = document.querySelector('body')
-const pieces = document.createElement('div')
-pieces.classList.add("pieces")
-
-body.appendChild(pieces)
-
-/* ---------------------------------------------- */
-
-//aqui cria as funções para a construção das peças
-function creatorOne(){
-    const playerOne = document.createElement('div')
-    playerOne.classList.add("playerOne")
-
-    return playerOne
-}
-
-
-function creatorTwo(){
-    const playerTwo = document.createElement('div')
-    playerTwo.classList.add("playerTwo")
-
-    return playerTwo
-}
-
-
-
