@@ -62,6 +62,16 @@ function addPiece(evt) {
     }
 
     victory(board)
+
+    const sondRick=document.createElement("audio")
+    const audioRick=document.createElement("source")
+    const body=document.querySelector("body")
+    sondRick.autoplay = "autoplay"
+    body.appendChild(sondRick)
+    sondRick.appendChild(audioRick)
+    audioRick.src="./assets/music/arroto_rick.mp3"
+    audioRick.type="audio/mp3"
+
 }
 
 
